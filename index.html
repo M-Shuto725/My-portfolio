@@ -4,17 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ポートフォリオ</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0,1);
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>自分のポートフォリオ</h1>
+  <div class="container"></div>
+    <h1>ポートフォリオ</h1>
 
-  <h2>作品一覧</h2>
+    <p>プログラミング学習中、Webアプリを制作しています。</p>
 
-  <ul>
-    <li>
-      <a href="https://m-shuto725.github.io/number-game/">数当てゲーム</a>
-    </li>
-  </ul>
+    <h2>作品一覧</h2>
+
+    <div class="card">
+      <h3>数当てゲーム</h3>
+      <p>1～100の数字を当てるゲームです。</p>
+      <a href="https://m-shuto725.github.io/number-game/">プレイする</a>
+    </div>
+    
+  </div>
   
 </body>
 </html>
