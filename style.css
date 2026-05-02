@@ -1,48 +1,123 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
   margin: 0;
-  text-align: center;
+  background: #f9fafb;
+  color: #333;
 }
 
-h1 {
-  background-color: #333;
+/* ヘッダー */
+header {
+  background: #667eea;
   color: white;
-  padding: 20px;
-  margin: 0;
+  text-align: center;
+  padding: 40px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+/* ヒーロー */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* カードエリア */
 .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px;
-  gap: 20px;
+  gap: 25px;
+  padding: 20px;
 }
 
+/* カード */
 .card {
   background: white;
-  width: 250px;
-  margin: 15px;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 260px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
-.card h3 {
-  margin-top: 0;
+.card:hover {
+  transform: translateY(-5px);
 }
 
+/* ボタン */
 .card a {
   display: inline-block;
   margin-top: 10px;
-  padding: 8px 15px;
-  background-color: #4CAF50;
+  padding: 8px 14px;
+  background: #667eea;
   color: white;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 5px;
 }
 
-.card a:hover {
-  background-color: #45a049;
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+
+  header {
+    padding: 30px 10px;
+  }
+
+  .hero {
+    padding: 20px 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 }

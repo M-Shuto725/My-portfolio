@@ -34,13 +34,27 @@
 </head>
 
 <body>
-  <div class="container"></div>
-    <h1>ポートフォリオ</h1>
+  <header>
+    <h1>M-Shuto Portfolio</h1>
 
-    <p>プログラミング学習中、Webアプリを制作しています。</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+    </nav>
 
+    <p>Webアプリ開発を学習中</p>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About</h2>
+    <p>現在大学生、プログラミングに興味を持ち、Webアプリを開発しています。</p>
+  </section>
+
+  <section class="hero"></div>
     <h2>作品一覧</h2>
+  </section>
 
+  <section class="container" id="works">
     <div class="card">
       <h3>数当てゲーム</h3>
       <p>JavaScriptを使って作成したシンプルなゲームです。<br>条件分岐やDOM操作の学習として制作しました。</p>
@@ -50,19 +64,31 @@
     <div class="card">
       <h3>ToDoアプリ</h3>
       <p>
-        JavaScriptで作成したタスク管理アプリです。<br>
-        localStorageを使ってデータ保存を実装しています。
+        JavaScriptで作成したタスク管理アプリ。<br>
+        localStorageを用いてデータ保存を実装、IDで管理。
       </p>
       <a href="https://m-shuto725.github.io/todo-app/">アプリを開く</a>
     </div>
 
     <div class="card">
       <h3>クイズアプリ</h3>
-      <p>JavaScriptで作成したクイズアプリです。複数問題とスコア機能が付いています。</p>
+      <p>JavaScriptで作成したクイズアプリ。<br>配列で問題を管理し、スコア機能・リスタート機能を実装。</p>
       <a href="https://m-shuto725.github.io/quiz-app/">プレイする</a>
     </div>
-    
-  </div>
+
+    <div class="card">
+      <h3>天気アプリ</h3>
+      <p>
+        APIを利用して天気情報を取得するアプリ。<br>
+        fetchによる非同期処理で外部データを取得。
+      </p>
+      <a href="https://m-shuto725.github.io/WeatherApi-app/">アプリを開く</a>
+    </div>
+  </section>
   
+  <footer>
+    <p>© 2026 M-Shuto Portfolio</p>
+    <a href="https://github.com/M-Shuto725">コードを見る</a>
+  </footer>
 </body>
 </html>
